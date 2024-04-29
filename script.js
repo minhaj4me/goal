@@ -103,12 +103,12 @@ checkboxes.forEach(checkbox => {
 
 inputboxes.forEach((input) => {
 
-  if(allGoals[input.id]){
+  if (allGoals[input.id]) {
     input.value = allGoals[input.id].name;
 
     if (allGoals[input.id].completed) {
       input.parentElement.classList.add('completed')
-  
+
     }
   }
 
@@ -125,13 +125,13 @@ inputboxes.forEach((input) => {
       return
     }
 
-    if(allGoals[input.id]){
-      allGoals[input.id].name= input.value
+    if (allGoals[input.id]) {
+      allGoals[input.id].name = input.value
     }
-    else{
-      allGoals[input.id]={
-        name:'',
-        completed:false
+    else {
+      allGoals[input.id] = {
+        name: '',
+        completed: false
       }
     }
 
